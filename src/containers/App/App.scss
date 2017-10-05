@@ -1,0 +1,93 @@
+.app {
+  background-color: #FFF;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.weather-info, .weather-icon {
+  margin-top: 45px;
+}
+
+
+// Clear day icon
+.rotating-sun {
+  animation: rotate-sun infinite 20s linear;
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes rotate-sun {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+// Clear night icon
+.twinkling-stars {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Partly cloudy day icon
+.disappearing-sun {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Partly cloudy night icon
+.disappearing-moon {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Cloudy icon
+.heavy-clouds {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Rain icon
+.falling-rain {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Sleet icon
+.snow-rain-combo {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Snow icons
+.snow-fall {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Wind icon
+.gusty-winds {
+  height: 200px;
+  width: 200px;
+}
+
+
+// Fog icon
+.dense-fog {
+  height: 200px;
+  width: 200px;
+}
