@@ -19,7 +19,7 @@
 
 // Clear day icon
 .rotating-sun {
-  animation: rotate-sun infinite 20s linear;
+  animation: rotate-sun 20s linear infinite;
   height: 200px;
   width: 200px;
 }
@@ -31,9 +31,14 @@
 
 
 // Clear night icon
-.twinkling-stars {
+.rocking-moon {
+  animation: swing 3s linear alternate infinite;
   height: 200px;
   width: 200px;
+}
+
+@keyframes swing {
+  100% { transform: rotate(-20deg); }
 }
 
 
@@ -53,41 +58,80 @@
 
 // Cloudy icon
 .heavy-clouds {
+  animation: float-right 3s ease-in-out alternate infinite;
   height: 200px;
   width: 200px;
+}
+
+@keyframes float-right {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px);
+    opacity: 0.5;
+  }
 }
 
 
 // Rain icon
 .falling-rain {
+  animation: rain-evaporating 2s ease-in-out alternate infinite;
   height: 200px;
   width: 200px;
+}
+
+@keyframes rain-evaporating {
+  100% { opacity: 0.3 }
 }
 
 
 // Sleet icon
 .snow-rain-combo {
+  animation: rotate-cloud 2s ease-out alternate infinite;
   height: 200px;
   width: 200px;
+}
+
+@keyframes rotate-cloud {
+  100% { transform: rotateY(-30deg); }
 }
 
 
 // Snow icons
 .snow-fall {
+  animation: snow-evaporating 2s ease-in-out alternate infinite;
   height: 200px;
   width: 200px;
 }
 
+@keyframes snow-evaporating {
+  100% { opacity: 0.3 }
+}
 
 // Wind icon
 .gusty-winds {
+  animation: float-left 2s cubic-bezier(0.5, 0.2, 0.3, 1.0) alternate infinite;
   height: 200px;
   width: 200px;
+}
+
+@keyframes float-left {
+  100% { transform: translateX(-50px); }
 }
 
 
 // Fog icon
 .dense-fog {
+  animation: fog 2s ease-in-out alternate infinite;
   height: 200px;
   width: 200px;
+}
+
+@keyframes fog {
+  100% { opacity: 0.3 }
 }

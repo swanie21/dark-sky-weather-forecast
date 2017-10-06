@@ -67,7 +67,7 @@ class App extends Component {
 
     const icons = [
       { weather: 'clear-day', image: ClearDay, styles: 'rotating-sun' },
-      { weather: 'clear-night', image: ClearNight, styles: 'twinkling-stars' },
+      { weather: 'clear-night', image: ClearNight, styles: 'rocking-moon' },
       { weather: 'partly-cloudy-day', image: PartlyCloudyDay, styles: 'disappearing-sun' },
       { weather: 'partly-cloudy-night', image: PartlyCloudyNight, styles: 'disappearing-moon' },
       { weather: 'cloudy', image: Cloudy, styles: 'heavy-clouds' },
