@@ -1,4 +1,5 @@
 import React from 'react';
+import './InputFields.scss';
 
 function InputFields (props) {
   return (
@@ -9,7 +10,7 @@ function InputFields (props) {
         name='latitude'
         id='latitude'
         onChange={ props.handleInput }
-        placeholder='Enter latitude'
+        placeholder='Enter Latitude'
       />
       <label htmlFor='latitude'></label>
       <input
@@ -18,7 +19,7 @@ function InputFields (props) {
         name='longitude'
         id='longitude'
         onChange={ props.handleInput }
-        placeholder='Enter longitude'
+        placeholder='Enter Longitude'
       />
       <label htmlFor='longitude'></label>
     </form>
